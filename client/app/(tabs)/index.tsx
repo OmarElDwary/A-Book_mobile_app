@@ -10,10 +10,6 @@ import BookCard from "@/components/BookCard";
 
 const Index = () => {
   const router = useRouter();
-  // const [data, setData] = React.useState<any>(null);
-  // const [loading, setLoading] = React.useState(false);
-  // const [error, setError] = React.useState<any>(null);
-
   const {
     data: books,
     loading: booksLoading,
@@ -29,7 +25,7 @@ const Index = () => {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ paddingBottom: 10, minHeight: "100%" }}
       >
-        <Image source={icons.logo} className="w-12 h-10 mt-20 mb-5 mx-auto" />
+        <Image source={images.logo2} className="w-12 h-14 mt-20 mb-5 mx-auto" />
         {booksLoading ? (
           <ActivityIndicator
             size={"large"}
