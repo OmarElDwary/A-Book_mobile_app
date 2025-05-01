@@ -25,7 +25,7 @@ const TabIcon = ({ focused, icon, title }: { focused: boolean; icon: any; title:
     );
   }
 };
-const _Layout = () => {
+const TabsLayout = () => {
   return (
     <Tabs
         screenOptions={{
@@ -75,7 +75,7 @@ const _Layout = () => {
           title: "search",
           headerShown: false,
           tabBarIcon: ({ focused }) => (
-            <TabIcon focused={focused} icon={icons.save} title={"search"} />
+            <TabIcon focused={focused} icon={icons.search} title={"search"} />
           ),
         }}
       />
@@ -93,4 +93,4 @@ const _Layout = () => {
   );
 };
 
-export default _Layout;
+export default TabsLayout;
